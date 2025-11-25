@@ -9,6 +9,7 @@ import PostProductionView from './views/PostProductionView';
 import AIGCVideoView from './views/AIGCVideoView';
 import ArchitectureView from './views/ArchitectureView';
 import LoginView from './views/LoginView'; 
+import ClassroomAssistant from './components/ClassroomAssistant'; // Import the assistant
 import { ModuleType, LogEntry, ScriptProject, ShotPlan, EditingFeedback, VideoGenerationState, AgentState, User, DashboardStats } from './types';
 import { generateId } from './services/mockPythonBackend';
 
@@ -197,6 +198,12 @@ export default function App() {
         {renderContent()}
       </main>
       <AgentLogs logs={logs} />
+      
+      {/* 
+        Classroom Assistant is mounted here, outside the main content flow 
+        so it can float above everything else.
+      */}
+      <ClassroomAssistant />
     </div>
   );
 }
