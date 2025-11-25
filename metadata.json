@@ -1,0 +1,5 @@
+{
+  "name": "CineEdu AI Nexus",
+  "description": "全功能影视制作教育智能体平台。集成 Google Gemini 模型，提供从剧本生成、分镜细化到后期视觉分析的全流程 AIGC 辅助与教学。",
+  "requestFramePermissions": []
+}
